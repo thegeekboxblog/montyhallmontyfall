@@ -1,0 +1,56 @@
+@CHARSET "ISO-8859-1";
+.box{
+	display: inline-table;
+	width: 3em;
+	height: 3em;
+	text-align: center;
+	border: 1px solid gray;
+}
+.number{
+	display: table-cell;
+	vertical-align: middle;
+}
+.prizeBox{
+	background-color: #80ff80;
+}
+.contestantBox{
+	border: 1px solid black;
+}
+.montyHallBox>div{
+	background-color: #c0c0c0;
+	border-radius: 50%;
+}
+.switchedBox{
+	border: 3px solid red;
+}
+.win-lose-box{
+	display: inline-table;
+	width: 8em;
+	height: 3em;
+	text-align: center;
+}
+.win-lose-text{
+	display: table-cell;
+	vertical-align: middle;
+}
+.win{
+	background-color: #00ff00;
+}
+.lose{
+	background-color: #c0c0c0;
+}
+#main-body{
+	text-align: center;
+	margin-top: 5%;
+}
+#monty-hall-container, #monty-fall-container {
+	display: inline-block;
+}
+.margin-vertical{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.void{
+	background-color: black;
+	color: white;
+}

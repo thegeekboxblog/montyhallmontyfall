@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" type="text/css"
+	href="plugins/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css"
+	href="plugins/bootstrap/css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css"
+	href="plugins/font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css"
+	href="styles/common.css">
+<script type="text/javascript" src="plugins/jquery/jquery-3.1.0.js"></script>
+<script type="text/javascript" src="plugins/bootstrap/js/bootstrap.js"></script>
+<script type="text/javascript" src="scripts/home.js"></script>
+</head>
+<body>
+<div id="main-body">
+
+	<div class="margin-vertical">
+		NUMBER OF TRIALS: <input type="text" id="number-of-trials">
+	</div>
+	<div class="margin-vertical">
+		<button type="button" id="run">Run</button>
+		<div>Time to Run: <span id="total-time"></span> s (<span id="average-time"></span> s per trial)</div>
+	</div>
+	
+	<div>
+		<div class="box prizeBox"><div class="number">1</div></div> Prize Box
+		<div class="box contestantBox"><div class="number">1</div></div> Initially Selected Box 
+		<div class="box montyHallBox"><div class="number">1</div></div> Monty's Opened Box
+		<div class="box switchedBox"><div class="number">1</div></div> Switched Box 
+	</div>
+
+	<div id="monty-all">
+		<div id="monty-hall-container">
+			<div>MONTY HALL</div>
+			<div>WINS: <span id="monty-hall-wins">0</span> | LOSSES: <span id="monty-hall-losses">0</span></div>
+			<div>WIN PERCENTAGE: <span id="monty-hall-wins-percentage">0</span> %</div>
+			<div id="monty-hall"></div>
+		</div>
+		
+		<div id="monty-fall-container">
+			<div>MONTY FALL</div>
+			<div>WINS: <span id="monty-fall-wins">0</span> | LOSSES: <span id="monty-fall-losses">0</span></div>
+			<div>WIN PERCENTAGE: <span id="monty-fall-wins-percentage">0</span> %</div>
+			<div id="monty-fall"></div>
+		</div>
+	</div>
+	
+	
+	
+	<div id="template" class="hidden">
+		<div class="box 1"><div class="number">1</div></div>
+		<div class="box 2"><div class="number">2</div></div>
+		<div class="box 3"><div class="number">3</div></div>
+		<div class="win-lose-box"><div class="win-lose-text"></div></div>
+	</div>
+</div>
+
+</body>
+</html>
